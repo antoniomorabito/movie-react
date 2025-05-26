@@ -1,5 +1,8 @@
 import { makeStyles } from "@mui/styles";
 
+
+const drawerWidth = 240;
+
 export default makeStyles((theme) => ({
     toolbar:{
         display: 'flex',
@@ -10,6 +13,15 @@ export default makeStyles((theme) => ({
             marginLeft: '0',
             flexWrap: 'wrap',
         }
+    },
+    drawer:{
+        [theme.breakpoints.up('sm')]: {
+            width: drawerWidth,
+            flexShrink: 0, 
+        }
+    },
+    drawerPaper:{
+        width: drawerWidth,
     },
      menuButton: {
         marginRight: theme.spacing(2),

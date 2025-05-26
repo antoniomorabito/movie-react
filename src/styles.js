@@ -1,6 +1,6 @@
 import { makeStyles } from '@mui/styles';
 
-export const drawerWidth = 240;
+const drawerWidth = 5;
 
 const useStyles = makeStyles((theme) => ({
   root: {
